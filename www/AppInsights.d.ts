@@ -1,10 +1,3 @@
-// Type definitions for Microsoft Application Insights plugin.
-// Project: https://github.com/msopentech/cordova-plugin-appinsights
-// Definitions by: Microsoft Open Technologies, Inc. <http://msopentech.com>
-// 
-// Copyright (c) Microsoft Open Technologies, Inc.
-// Licensed under the MIT license. 
-
 interface config {
     /**
     * Sets the instrumentation key
