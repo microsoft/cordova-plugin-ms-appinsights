@@ -28,4 +28,21 @@ document.addEventListener("deviceready", function () {
     }
 });
 
+// Capture unhandled exceptions which are reported as crashes
+var originalOnError = window.onerror;
+window.onerror = function (message, url, lineNumber, columnNumber, error) {
+    // if there was a pre-existing handler, invoke it here
+    var handled = originalOnError && originalOnError(message, url, lineNumber, columnNumber, error);
+
+    // if the pre-existing handler 'handled' the exception we don't need to process it
+    if (handled !== true) {
+        // otherwise, track in it in the SDK
+        appInsights._onerror(message, url, lineNumber, columnNumber, error);
+    }
+
+    // On windows if window.onerror returns true, the application exits immediately
+    // so to properly report an exception we need to return true here
+    return (cordova.platformId === 'windows' || cordova.platformId === 'windows8') ? true : handled;
+};
+
 module.exports = appInsightsConfig;
