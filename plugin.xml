@@ -17,6 +17,8 @@
     <repo>https://github.com/MSOpenTech/cordova-plugin-appinsights</repo>
     <issue>https://github.com/MSOpenTech/cordova-plugin-appinsights/issues</issue>
 
+    <dependency id="org.apache.cordova.device" />
+
     <!-- FIXME: There is currently a bug in cordova-lib which makes usage of mandatory plugin
     variables impossible. The following line should be uncommented once this bug is fixed -->
     <!-- <preference name="INSTRUMENTATION_KEY" /> -->
@@ -31,6 +33,7 @@
 
     <hook type="before_prepare" src="scripts/appinsights_before_prepare.js" />
 
+    <!-- Set up whitelist rule to allow access to AppInsights endpoint -->
     <config-file target="config.xml" parent="/*">
         <access origin="https://dc.services.visualstudio.com/v2/track" />
     </config-file>
