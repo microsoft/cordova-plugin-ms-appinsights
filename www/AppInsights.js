@@ -18,4 +18,14 @@ var appInsightsConfig = {
     endpointUrl: "https://dc.services.visualstudio.com/v2/track"
 };
 
+document.addEventListener("deviceready", function () {
+    // When and if device plugin is initialized, set up the device context
+    if (device && appInsights && appInsights.context && appInsights.context.device) {
+        appInsights.context.device.osversion = device.version;
+        appInsights.context.device.os = device.platform;
+        appInsights.context.device.model = device.model;
+        appInsights.context.device.id = device.uuid;
+    }
+});
+
 module.exports = appInsightsConfig;
