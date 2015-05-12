@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-appinsights",
+  "name": "cordova-plugin-ms-appinsights",
   "version": "0.0.2",
   "description": "Application Insights Cordova plugin.",
   "cordova": {
