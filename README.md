@@ -82,7 +82,7 @@ More information about AppInsights API could be found [here](http://azure.micros
 
   * Set up intrumentation key for AppInsights API. Modify the following line in `config.xml` file at the project root
 
-    `<preference name="instrumentation_key" value="$INSTRUMENTATION_KEY">`
+    `<preference name="instrumentation_key" value="$INSTRUMENTATION_KEY"/>`
 
   replace `$INSTRUMENTATION_KEY` with your key.
 
