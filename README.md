@@ -77,9 +77,8 @@ More information about AppInsights API could be found [here](http://azure.micros
 
   * Add the plugin to your project
 
-    <!-- `cordova plugin add ../cordova-plugin-appinsights --variable INSTRUMENTATION_KEY=<your_key>` -->
-    `cordova plugin add ../cordova-plugin-appinsights`
-
+    `cordova plugin add ../cordova-plugin-appinsights --variable INSTRUMENTATION_KEY=<your_key>`
+    
   * Set up intrumentation key for AppInsights API. Modify the following line in `config.xml` file at the project root
 
     `<preference name="instrumentation_key" value="$INSTRUMENTATION_KEY">`
@@ -88,7 +87,7 @@ More information about AppInsights API could be found [here](http://azure.micros
 
   * _optional_: install battery and network status plugins to track their events to AppInsights as well.
 
-    `cordova plugin add org.apache.cordova.battery-status org.apache.cordova.network-information`
+    `cordova plugin add cordova-plugin-battery-status cordova-plugin-network-information`
 
   * Build and run application: `cordova run`.
 
