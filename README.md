@@ -43,7 +43,7 @@ try {
 
 ```
 
-More information about AppInsights API could be found [here](http://azure.microsoft.com/en-us/documentation/articles/app-insights-web-track-usage-custom-events-metrics/)
+More information about AppInsights API could be found [here](https://azure.microsoft.com/en-us/documentation/articles/app-insights-api-custom-events-metrics/)
 
 ## Installation Instructions
 
