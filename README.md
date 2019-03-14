@@ -1,3 +1,7 @@
+### As of March 2019, this repo is no longer maintained by Microsoft. If you're interested in continuing this project, please feel free to fork it. As of March 2019, we will no longer monitor or respond to open issues. Thanks for your support!
+
+---
+
 # Application Insights plugin for Apache Cordova apps
 
 This plugin allows you to add an Application Insights to your Apache Cordova app. Application Insights is a techonogy that sends telemetry from your app to the Azure portal.
