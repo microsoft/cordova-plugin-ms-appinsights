@@ -1,4 +1,4 @@
-This plugin is not currently supported or maintained by Microsoft.
+This plugin is no longer supported or maintained by Microsoft. If you wish to continue this project, please feel free to fork it.
 
 # Application Insights plugin for Apache Cordova apps
 
