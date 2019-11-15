@@ -9,7 +9,7 @@ More info about Application Insights technology could be found [here](http://azu
 
 To use this plugin you'll need an account in Microsoft Azure. You might already have access to a group account through your organization, or you might want to get a Pay-as-you-go account. (While Application Insights is in Preview, it's free.)
 
-For more API documentation see [sample application](https://github.com/AzureAD/azure-activedirectory-library-for-cordova/tree/master/sample) and JSDoc for exposed functionality stored in [www](https://github.com/AzureAD/azure-activedirectory-library-for-cordova/tree/master/www) subfolder.
+For more API documentation see [sample application](https://github.com/MSOpenTech/cordova-plugin-ms-appinsights/tree/master/sample) and JSDoc for exposed functionality stored in [www](https://github.com/MSOpenTech/cordova-plugin-ms-appinsights/tree/master/www) subfolder.
 
 ## Supported platforms
 
@@ -19,7 +19,7 @@ For more API documentation see [sample application](https://github.com/AzureAD/a
 
 ## Sample usage
 
-Application Insights API is available through `window.appInsights` object. To start using it you don't have to initialize it, just start calling its' methods
+Application Insights API is available through `window.appInsights` object. To start using it you don't have to initialize it, just start calling its methods
 
 ```javascript
 // This will send a custom-defined event to your appInsights account
