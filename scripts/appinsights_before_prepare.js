@@ -7,7 +7,7 @@ Licensed under the Apache License, Version 2.0.  See License.txt in the project 
 
 module.exports = function (ctx) {
 
-    var ConfigParser = ctx.requireCordovaModule('../configparser/ConfigParser');
+    var ConfigParser = ctx.requireCordovaModule('cordova-common/src/ConfigParser/ConfigParser');
     var path = ctx.requireCordovaModule('path');
     var shell = ctx.requireCordovaModule('shelljs');
 
